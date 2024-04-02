@@ -28,7 +28,8 @@ while True:
         break
     user_choice=int(user_choice1)
     print("\nWaiting for the computer to choose: ")
-    comp_choice=random.randint(1,3)
+    comp_choice1=random.choice([1,2,3],p=[0.29,0.43,0.31])
+    comp_choice=int(comp_choice1)
     if(user_choice>0 and user_choice<4):
         if(comp_choice==user_choice):
             comp_choice=random.randint(1,3)#giving a second chance so we get difeerent outcome
